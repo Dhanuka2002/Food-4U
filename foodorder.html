@@ -1,0 +1,121 @@
+<html>
+    <head>
+        <title>Food 4U</title>
+        <link rel="stylesheet" href="foodorder.css">
+        <script src="https://kit.fontawesome.com/9b6f11c829.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+
+    <body>
+
+            <header>
+            <div class="navigation">
+                
+            <p class="logo">Food 4U</p>
+                <ul>
+                    <li><a href="main.html">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="#f1">Contact Us</a></li>
+                </ul>
+                
+            
+            </div>
+            </header>
+
+    <!-- fOOD sEARCH Section Starts Here -->
+    <section class="food-search">
+        <div class="container">
+            <br><br><br>
+            <h2 class="text-center text-white">Fill this form to confirm your order</h2>
+
+                <form action="process_order.php" method="POST" class="order">
+
+                <fieldset>
+                    <legend>Selected Food</legend>
+
+                    <div class="food-menu-img">
+                        <img src="images/pasta.jpg" alt="Chicke Hawain Pizza" class="img-responsive img-curve">
+                    </div>
+    
+                    <div class="food-menu-desc">
+                        <h3>Pasta</h3>
+                        <p class="food-price">$12.0</p>
+
+                        <div class="order-label">Quantity</div>
+                        <br>
+                        <input type="number" name="qty" class="input-responsive" value="1" required>
+                        
+                    </div>
+
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Delivery Details</legend>
+                    <div class="order-label">Full Name</div>
+                    <input type="text" name="full-name" placeholder="Enter your Name" class="input-responsive" required>
+
+                    <div class="order-label">Phone Number</div>
+                    <input type="tel" name="contact" placeholder="Enter your Phone Number" class="input-responsive" required>
+
+                    <div class="order-label">Email</div>
+                    <input type="email" name="email" placeholder="Enter your Email" class="input-responsive" required>
+
+                    <div class="order-label">Address</div>
+                    <textarea name="address" rows="10" placeholder="Enter your Address" class="input-responsive" required></textarea>
+
+                    <input type="submit" name="submit" value="Confirm Order" class="btn btn-primary">
+                    <br>
+                </fieldset>
+
+            </form>
+
+        </div>
+    </section>
+    <!-- fOOD sEARCH Section Ends Here -->
+
+    
+
+    <footer id="f1">
+        <div class="footer-container">
+            
+            <div class="footer-section social-media">
+                <h4>Join social media commiunity</h4>
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook"></i> Facebook
+                </a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i> Twitter
+                </a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+            </div>
+    
+            <div class="footer-section contactinfo" id="c_info">
+                <h4>Contact Us:</h4>
+                <p>Email: contact@foodselector.com</p>
+                <p>Mobile: +123-456-7890</p>
+                <p>Address: 1234 Food Street, Culinary City</p>
+            </div>
+    
+            <div class="footer-section quicklinks">
+                <h4>Quick links</h4>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">FAQ</a>
+                <a href="#">Services</a>
+                <a href="#">Blog</a>
+                <a href="#">Contact</a>
+              </div>
+        </div>
+        <div class="p1">
+            <p >&copy; 2024 Food Selector. All rights reserved.</p>
+        </div>
+    </body>
+    </html>

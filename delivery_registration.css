@@ -1,0 +1,117 @@
+body {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    
+    background-position: center;
+    background-image: linear-gradient(rgba(0,0,0,0.40),rgba(0,0,0,0.40)),url(images/delivery.jpg);
+    background-size: cover;
+ 
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
+    border-radius: 15px;
+}
+.form-area {
+    align-items: center;    
+    padding: 20px 40px;
+    
+    width: 500px;
+}
+h1 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #00f7ff;
+    text-align: center;
+}
+.input-group {
+    margin-bottom: 15px;
+}
+.input-group label {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #fff;
+
+}
+.input-group input { 
+    border: 1px solid #ccc;
+    border-radius: 17px;
+    font-size: 19px;
+    color:  #cabebe;
+    background: transparent;
+    width: 375px;
+}
+.input-group1{
+    margin-bottom: 15px;
+    display: flex;
+}
+.input-group1 label{
+    font-size: 20px;
+    font-size: 20px;
+    margin-right: 10px;
+    color: #fff;
+}
+.input-group1 input{
+    flex: 1;
+    border: 1px solid #ccc;
+    border-radius: 17px;
+    font-size: 20px;
+    background: transparent;
+
+    color: #fff;
+    
+}
+.input-group2{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.input-group2 label{
+    font-size: 20px;
+    font-size: 20px;
+    margin-right: 10px;
+    color: #fff;
+}
+.input-group4{
+    align-items: center;
+    margin-bottom: 15px;
+}
+.input-group4 label{
+    font-size: 20px;
+    margin-right: 5px;
+    color: #fff;
+
+}
+.input-group4 input {
+    flex: 1;
+   
+    padding: 2px;
+    margin-left: 125px;
+    background-color: #fff;
+}
+.label-text{
+    color: #fff;
+    margin: 5px;
+    font-size: 17px;
+}
+button{
+    background: transparent;
+    border-radius: 20px;
+    color: #fff;
+    margin-left: 350px;
+    width: 120px;
+    height: 35px;
+    margin-top: 5px;
+    transition: 0.4s;
+}
+button:hover{
+    border-color: #fff;
+    background-color: #00f7ff;
+    color: #000000;
+}

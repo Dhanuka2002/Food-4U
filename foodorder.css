@@ -1,0 +1,222 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Header */
+header {
+    position: fixed;
+    width: 100%;
+    height: 75px;
+    background-color: #031d11;
+    z-index: 10;
+}
+.navigation {
+    width: 85%;
+    margin: auto;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.logo {
+    font-family: 'Great Vibes', cursive;
+    color: #fff;
+    margin-right: 30px;
+    font-size: 25px;
+}
+.navigation ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 15px;
+    cursor: pointer;
+}
+.navigation ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+.navigation ul li a:hover {
+    color: #07d143;
+}
+.navigation img {
+    width: 50px;
+}
+
+/* General Styles */
+
+form{
+    width: 50%;
+    margin-left: 25%;
+}
+h2 {
+    font-size: 2.5rem;
+    color: #07d143;
+    margin-bottom: 20px;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+.text-center {
+    text-align: center;
+}
+.text-white {
+    color: #fff;
+}
+
+/* Food Search Section */
+.food-search {
+    background-image: url('images/resturant.jpg'); /* Replace with a high-quality restaurant background */
+    background-size: cover;
+    background-position: center;
+    padding: 60px 0;
+}
+.food-search .order {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.food-search legend {
+    font-size: 1.8rem;
+    color: #07d143;
+    margin-bottom: 15px;
+    border-bottom: 3px solid #07d143;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+.food-menu-img {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.food-menu-img img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.food-menu-desc {
+    margin-top: -20px;
+    text-align: center;
+}
+.food-price {
+    font-size: 1.5rem;
+    color: #e74c3c;
+    margin: 10px 0;
+}
+.input-responsive {
+    width: calc(100% - 20px);
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+textarea.input-responsive {
+    resize: none;
+}
+.btn-primary {
+    background: #07d143;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+    display: block;
+    margin: auto;
+}
+.btn-primary:hover {
+    background: #05a431;
+}
+
+/* Social Section */
+.social {
+    background: #031d11;
+    padding: 40px 0;
+    color: white;
+}
+.social ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.social ul li a img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+}
+.social ul li a img:hover {
+    transform: scale(1.2);
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    flex-wrap: wrap;
+}
+.footer-section {
+    flex: 1;
+    margin: 10px;
+}
+.footer-section h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.footer-section a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+.footer-section a:hover {
+    color: #07d143;
+}
+.contactinfo p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+.quicklinks {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .food-menu-img img {
+        width: 100px;
+        height: 100px;
+    }
+    .food-menu-desc {
+        margin: 0;
+    }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Your Restaurant</title>
+    <link rel="stylesheet" href="resturant_form.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-area">
+            <form action="resturant_form.php" method="POST" enctype="multipart/form-data">
+                <h1>Register Your Restaurant</h1> 
+                <div class="input-group">
+                    <label for="restaurant_name">Restaurant Name</label><br>
+                    <input type="text" id="restaurant_name" name="resurant_name" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label><br>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="address">Address</label><br>
+                    <input type="text" id="address" name="address" required>
+                </div>
+                <div class="input-group">
+                    <label for="mobile">Mobile Number</label><br>
+                    <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required>
+                </div> 
+                <div class="input-group1">
+                    <label for="opening_hours_from">Opening Hours</label><br>
+                    <label>From 
+                        <input type="time" id="opening_hours_from" name="opening_hours_from" required>
+                    </label>
+                    <label>To 
+                        <input type="time" id="opening_hours_to" name="opening_hours_to" required>
+                    </label>
+                </div>   
+                <div class="input-group2">
+                    <label for="business_registration">Business Registration Details</label><br>
+                    <input type="file" id="business_registration" name="business_registration" accept=".pdf,.jpg,.png" required style="color: #fff;">
+                </div>
+                <fieldset class="input-group4">
+                    <legend style="color: #fff;">Food Items</legend>
+                    <input type="checkbox" id="rice_and_curry" name="food_items[]" value="Rice and Curry">
+                    <label for="rice_and_curry">Rice and Curry</label><br>
+                    <input type="checkbox" id="fried_rice" name="food_items[]" value="Fried Rice">
+                    <label for="fried_rice">Fried Rice</label><br>
+                    <input type="checkbox" id="kottu" name="food_items[]" value="Kottu">
+                    <label for="kottu">Kottu</label><br>
+                    <input type="checkbox" id="short_eats" name="food_items[]" value="Short Eats">
+                    <label for="short_eats">Short Eats</label><br>
+                </fieldset>
+                <div class="button">
+                    <button type="submit" value="submit">Register Now</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

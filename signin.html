@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign-In</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/9b6f11c829.js" crossorigin="anonymous"></script>
+  
+</head>
+
+<body>
+   
+  <div class="container">
+    <div class="form-box">
+      <h1>Sign-In</h1>
+      <form id="signin-form" onclick="validateForm()" action="register.php" method="post">
+        
+        <input type="hidden" name="action" value="login">
+        <div class="input-group">
+          <label for="email"><i class="fa fa-envelope"></i></label>
+          <input type="email" id="email" name="email" placeholder="Email">
+        </div>
+        <div class="input-group">
+          <label for="password"><i class="fa fa-lock"></i></label>
+          <input type="password" id="password" name="password" placeholder="Password">
+        </div>
+        <p id="error-message" style="color: rgb(160, 28, 79);"></p>
+        <button type="submit" class="btn">Sign-In</button>
+        <div class="reg">
+            <p>Not a Member ?</p><a href="signup.html">Sign Up</a>
+        </div>
+      </form>
+      
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
