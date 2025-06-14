@@ -27,7 +27,7 @@ $conn->select_db("food_4u");
 $table_create_query = "CREATE TABLE IF NOT EXISTS registration (
     id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(30) NOT NULL,
-    adress VACHAR(30)NOT NULL,
+    adress VARCHAR(30)NOT NULL,
     email VARCHAR(50) UNIQUE NOT NULL,
     password VARCHAR(255) NOT NULL
 )";
@@ -55,7 +55,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
 
         // Insert user data into the database  
-        $insert_query = "INSERT INTO registration (name,adress, email, password) VALUES ('$name',$adress','$email' , '$password')";
+        $insert_query = "INSERT INTO registration (name,adress, email, password) VALUES ('$name','$adress','$email' , '$password')";
 
         if ($conn->query($insert_query) === TRUE) {
             echo "Registration successful!";

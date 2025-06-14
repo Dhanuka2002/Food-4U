@@ -38,7 +38,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $message = $_POST['message'];
     
         // SQL query to insert the data
-        $insertSql = "INSERT INTO feedback (name, email, message)
+        $insertSql = "INSERT INTO feedback (customer_name, customer_email, message)
                       VALUES ('$name', '$email', '$message')";
     
         if ($conn->query($insertSql) === TRUE) {
